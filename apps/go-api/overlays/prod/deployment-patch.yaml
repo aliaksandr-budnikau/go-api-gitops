@@ -9,4 +9,4 @@ spec:
     spec:
       containers:
       - name: go-api
-        image: ghcr.io/yourname/go-api:v1.0.0
+        image: go-api
