@@ -4,3 +4,8 @@ kind: Kustomization
 resources:
 - deployment.yaml
 - service.yaml
+
+images:
+  - name: go-api
+    newName: host.docker.internal:5000/go-api
+    newTag: v1.0.0
