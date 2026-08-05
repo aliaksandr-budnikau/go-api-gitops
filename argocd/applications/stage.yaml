@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+
+metadata:
+  name: go-api-stage
+spec:
+  source:
+    repoURL: https://github.com/aliaksandr-budnikau/go-api-gitops.git
+    targetRevision: main
+    path: apps/go-api/overlays/stage
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: stage

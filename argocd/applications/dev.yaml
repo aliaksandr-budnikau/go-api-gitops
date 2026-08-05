@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+
+metadata:
+  name: go-api-dev
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/aliaksandr-budnikau/go-api-gitops.git
+    targetRevision: main
+    path: apps/go-api/overlays/dev
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: dev
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

@@ -1,0 +1,31 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+
+metadata:
+  name: go-api
+  namespace: argocd
+spec:
+  description: Go API applications
+  sourceRepos:
+    - https://github.com/aliaksandr-budnikau/go-api-gitops.git
+  destinations:
+    - namespace: dev
+      server: https://kubernetes.default.svc
+    - namespace: stage
+      server: https://kubernetes.default.svc
+    - namespace: prod
+      server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+    - group: ""
+      kind: Namespace
+  namespaceResourceWhitelist:
+    - group: apps
+      kind: Deployment
+    - group: ""
+      kind: Service
+    - group: ""
+      kind: ConfigMap
+    - group: ""
+      kind: Secret
+    - group: networking.k8s.io
+      kind: Ingress

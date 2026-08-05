@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: go-api
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - name: go-api
+        image: ghcr.io/yourname/go-api:dev
