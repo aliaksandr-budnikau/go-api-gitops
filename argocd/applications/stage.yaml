@@ -3,6 +3,7 @@ kind: Application
 
 metadata:
   name: go-api-stage
+  namespace: argocd
 spec:
   project: go-api
   source:
