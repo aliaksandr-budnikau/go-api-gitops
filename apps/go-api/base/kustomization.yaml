@@ -9,4 +9,3 @@ images:
   - name: go-api
     newName: ghcr.io/aliaksandr-budnikau/go-api
     newTag: v1.0.0
-    imagePullPolicy: Always

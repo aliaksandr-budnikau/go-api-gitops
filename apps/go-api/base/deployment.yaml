@@ -18,6 +18,7 @@ spec:
       containers:
       - name: go-api
         image: go-api
+        imagePullPolicy: Always
         ports:
         - containerPort: 8070
         readinessProbe:
