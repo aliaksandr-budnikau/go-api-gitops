@@ -7,5 +7,5 @@ resources:
 
 images:
   - name: go-api
-    newName: host.docker.internal:5000/go-api
+    newName: ghcr.io/aliaksandr-budnikau/go-api:v1.0.0
     newTag: v1.0.0
