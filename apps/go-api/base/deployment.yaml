@@ -13,9 +13,11 @@ spec:
       labels:
         app: go-api
     spec:
+      imagePullSecrets:
+          - name: ghcr-secret
       containers:
       - name: go-api
-        image: ghcr.io/yourname/go-api:v1
+        image: go-api
         ports:
         - containerPort: 8070
         readinessProbe:
