@@ -9,6 +9,8 @@ spec:
   sourceRepos:
     - https://github.com/aliaksandr-budnikau/go-api-gitops.git
   destinations:
+    - namespace: argocd
+      server: https://kubernetes.default.svc
     - namespace: dev
       server: https://kubernetes.default.svc
     - namespace: stage
