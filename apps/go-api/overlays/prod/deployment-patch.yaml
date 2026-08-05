@@ -9,4 +9,3 @@ spec:
     spec:
       containers:
       - name: go-api
-        newTag: v1.0.0
