@@ -4,6 +4,7 @@ kind: Application
 metadata:
   name: go-api-stage
 spec:
+  project: go-api
   source:
     repoURL: https://github.com/aliaksandr-budnikau/go-api-gitops.git
     targetRevision: main

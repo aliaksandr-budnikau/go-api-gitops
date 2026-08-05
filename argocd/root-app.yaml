@@ -3,8 +3,9 @@ kind: Application
 
 metadata:
   name: go-api-root
+  namespace: argocd
 spec:
-  project: default
+  project: go-api
   source:
     repoURL: https://github.com/aliaksandr-budnikau/go-api-gitops.git
     targetRevision: main

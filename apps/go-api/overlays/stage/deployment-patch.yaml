@@ -9,4 +9,4 @@ spec:
     spec:
       containers:
       - name: go-api
-        image: go-api:stage
+        newTag: stage
