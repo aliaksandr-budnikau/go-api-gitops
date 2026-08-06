@@ -43,6 +43,4 @@ spec:
     - group: networking.k8s.io
       kind: Ingress
     - group: monitoring.coreos.com
-      kind: '*'
-    - group: rbac.authorization.k8s.io
-      kind: '*'
+      kind: ServiceMonitor
