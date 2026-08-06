@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/aliaksandr-budnikau/go-api-gitops.git
     targetRevision: main
-    path: argocd/applications
+    path: argocd
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
