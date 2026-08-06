@@ -1,10 +1,11 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
+
 metadata:
   name: monitoring
   namespace: argocd
 spec:
-  project: go-api
+  project: monitoring
   source:
     chart: kube-prometheus-stack
     repoURL: https://prometheus-community.github.io/helm-charts
