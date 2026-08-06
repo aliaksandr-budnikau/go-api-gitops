@@ -9,4 +9,4 @@ resources:
 images:
   - name: go-api
     newName: ghcr.io/aliaksandr-budnikau/go-api
-    newTag: v1.0.0
+    newTag: v1.1.0
